@@ -1,5 +1,6 @@
 'use strict';
 
+// Solution 1
 const isUnique = (input) => {
   let obj = {};
   for (let i = 0; i < input.length; i++) {
@@ -11,6 +12,19 @@ const isUnique = (input) => {
   }
   return true;
 };
+
+// Solution 2
+const isUnique = (input) => {
+  let chars = new Set();
+
+  for (let i = 0; i < input.length; ++i) {
+    if (chars.has(input[i])) {
+      return false;
+    }
+    chars.add(input[i]);
+  }
+  return true;
+}
 
 /* TEST CASE */
 console.log(isUnique('xyz'), 'true');
