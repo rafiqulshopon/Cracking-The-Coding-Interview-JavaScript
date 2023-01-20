@@ -1,7 +1,7 @@
 'use strict';
 
 // Solution 1
-const isUnique = (input) => {
+const isUnique1 = (input) => {
   let obj = {};
   for (let i = 0; i < input.length; i++) {
     if (obj[input[i]] && obj[input[i]] >= 1) {
@@ -24,7 +24,7 @@ const isUnique = (input) => {
     chars.add(input[i]);
   }
   return true;
-}
+};
 
 /* TEST CASE */
 console.log(isUnique('xyz'), 'true');
