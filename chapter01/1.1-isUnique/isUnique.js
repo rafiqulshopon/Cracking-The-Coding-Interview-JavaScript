@@ -11,7 +11,7 @@ const isUnique = (input) => {
 };
 
 /* TEST CASE */
+console.log(isUnique('tnod'), 'true');
 console.log(isUnique('xyz'), 'true');
 console.log(isUnique('tyts'), 'false');
 console.log(isUnique('sdfs'), 'false');
-console.log(isUnique('tnod'), 'true');
