@@ -20,6 +20,6 @@ const checkPermute = (stringOne, stringTwo) => {
 
 /* TEST CASE */
 console.log(checkPermute('aba', 'aab'), true);
+console.log(checkPermute('bbba', 'bbab'), true);
 console.log(checkPermute('aba', 'aaba'), false);
 console.log(checkPermute('aba', 'aa'), false);
-console.log(checkPermute('bbba', 'bbab'), true);

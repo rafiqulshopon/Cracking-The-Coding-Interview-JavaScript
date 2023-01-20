@@ -6,8 +6,8 @@ const stringRotation = (string1, string2) => {
 };
 
 /* TEST CASE */
+console.log(stringRotation('hello', 'ohell'), true);
 console.log(stringRotation('abcd', 'dabc'), true);
 console.log(stringRotation('abc', 'cba'), false);
 console.log(stringRotation('', ''), true);
 console.log(stringRotation('123', '231'), true);
-console.log(stringRotation('hello', 'ohell'), true);
