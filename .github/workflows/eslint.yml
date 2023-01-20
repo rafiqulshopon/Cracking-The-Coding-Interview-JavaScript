@@ -9,8 +9,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - run: yarn install
-      - uses: reviewdog/action-eslint@v1
+      - run: npm install
+      - uses: reviewdog/action-eslint@v1.16.
         with:
           reporter: github-check
           eslint_flags: 'src/'
