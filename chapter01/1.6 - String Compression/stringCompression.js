@@ -16,9 +16,9 @@ const stringCompression = (string) => {
 };
 
 /* TEST CASE */
-console.log('raaafiqul', stringCompression('raaafiqul'), 'r1a3f1i1q1u1l1');
 console.log(
   'shoooopoooonnnnn',
   stringCompression('shoooopoooonnnnn'),
   's1h1o4p1o4n5'
 );
+console.log('raaafiqul', stringCompression('raaafiqul'), 'r1a3f1i1q1u1l1');
