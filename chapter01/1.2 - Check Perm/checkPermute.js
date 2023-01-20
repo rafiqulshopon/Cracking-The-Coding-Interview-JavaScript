@@ -1,11 +1,21 @@
 const checkPermute = (stringOne, stringTwo) => {
   if (stringOne.length !== stringTwo.length) {
     return false;
-  } else {
-    const sortedStringOne = stringOne.split('').sort().join('');
-    const sortedStringTwo = stringTwo.split('').sort().join('');
-    return sortedStringOne === sortedStringTwo;
   }
+
+  const charCount = {};
+  for (let char of stringOne) {
+    charCount[char] = charCount[char] + 1 || 1;
+  }
+
+  for (let char of stringTwo) {
+    if (!charCount[char]) {
+      return false;
+    }
+    charCount[char]--;
+  }
+
+  return true;
 };
 
 /* TEST CASE */

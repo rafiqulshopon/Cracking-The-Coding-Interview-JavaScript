@@ -1,19 +1,3 @@
-'use strict';
-
-// Solution 1
-const isUnique1 = (input) => {
-  let obj = {};
-  for (let i = 0; i < input.length; i++) {
-    if (obj[input[i]] && obj[input[i]] >= 1) {
-      return false;
-    } else {
-      obj[input[i]] = 1;
-    }
-  }
-  return true;
-};
-
-// Solution 2
 const isUnique = (input) => {
   let chars = new Set();
 
